@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+       <style>
+        body{
+            background-color: black;
+        }
+   
+    .box1{
+        width:300px;
+        height: 200px;
+        border:1px solid ;
+        border-radius:10px;
+        margin-top:150px;
+        margin-left:200px;
+        padding:15px;
+        background-color:rgb(24, 21, 21);
+        animation-name: style1;
+        animation-duration:2s;
+        animation-fill-mode: forwards;
+        
+         
+    }
+     .box2{
+        width:300px;
+        height: 200px;
+        border:1px solid ;
+        border-radius:10px;
+        margin-top:150px;
+        margin-left:100px;
+        padding:15px;
+        background-color:rgb(24, 21, 21);
+        animation-name: style2;
+        animation-duration:2s;
+        animation-fill-mode: forwards;
+    }
+    h3{
+        color:green ;
+    }
+    p{
+        color: bisque;
+        margin-left:70px;
+    
+    }
+    .box1:hover{
+        border:1px solid lightgreen;
+        padding:10px;
+        background-color: black;
+        
+    }
+     .box1:hover p {
+       color: yellow;
+    }
+    .box2:hover {
+       padding:10px;
+        border:1px solid lightgreen;
+        background-color: black;
+    }
+     .box2:hover p {
+       color: yellow;
+    }
+    
+    .header{
+       width: 900px;
+        height:50px;
+    }
+    a{
+        color: aliceblue;
+        text-decoration: none;
+        padding: 30px;
+        position: relative;
+        top: 10px;
+        left: 700px
+    }
+   
+    a:hover{
+        color: red;
+    }
+    i{
+        color: aliceblue;
+        position: relative;
+        top:440px;
+        right:440px;
+        padding:10px;
+    }
+   i:hover{
+    color: lightgreen;
+    background-color: red;
+    border-radius: 60px;
+   }
+   @keyframes style1{
+        0%{
+            transform: translateX(-300px);
+        }
+        100%{
+            transform: translateX(opx);
+        }
+
+    }
+     @keyframes style2{
+        0%{
+            transform: translateX(300px);
+        }
+        100%{
+            transform: translateX(opx);
+        }
+
+    }
+    
+    
+
+   
+   </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="header">
+        <a class="link" href="Portfolio.html">HOME</a>
+        <a href="About.html">ABOUT</a>
+        <a href="Skill.html">SKILL</a>
+        <a href="Contact.html">CONTACT</a>
+       <h1 style="position:relative;left: 300px;">
+            <span style="color: aliceblue;">MY</span>
+            <span style="color: orangered;">SKILL:</span>
+        </h1>
+
+    </div>
+    <div style="display: flex;">
+        <div class="box1">
+        <h3 >FRONTEND  DEVELOPER:</h3>
+        <p style="line-height:30px;">HTML<br> 
+            CSS<br>
+            JAVASCRIPT<br>
+            BOOT STRAP<br>
+            REACT </p>
+    </div>
+    <div class="box2">
+        <h3>BACKEND  DEVELOPER:</h3>
+        <p style="line-height:30px;">JAVA<br>
+            SPRING BOOT<br>
+            POSTGRE SQL</p>
+    </div>
+     <div class="icon">
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-whatsapp"></i>
+    <i class="fa-brands fa-github"></i>
+    <i class="fa-brands fa-instagram"></i>
+
+    </div>
+   
+</body>
+</html>
